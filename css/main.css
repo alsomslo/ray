@@ -720,16 +720,456 @@
     margin: 0 0 10px 0;
 }
 
+
+
+.main_portfolio {
+    position: relative;
+    background: #f9f9f9;
+}
+
+.main_portfolio figure {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 50px;
+    transition: 5s;
+}
+
+.main_portfolio figure:not(.slick-current) {
+    filter: grayscale(1) brightness(2) blur(1px);
+    transition: 1s;
+}
+
+.main_portfolio .content {
+    max-width: 100%;
+
+    padding: 0 0;
+}
+
+.main_portfolio .itm {
+    display: none;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.main_portfolio .itm h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.main_portfolio .itm p {
+    line-height: 20px;
+
+}
+
+.main_portfolio .itm a {
+    margin: auto 0 0 0;
+    align-self: flex-start;
+}
+
+.main_portfolio .tab_arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1300px;
+    width: 100%;
+    user-select: none;
+    cursor: pointer
+}
+
+.main_portfolio .tab_arrows .left {
+    position: absolute;
+    left: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main_portfolio .tab_arrows .left::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+    background: #333;
+
+
+}
+
+.main_portfolio .tab_arrows .left::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 20px;
+
+    height: 2px;
+    background: #333;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+
+
+
+}
+
+.main_portfolio .tab_arrows .right {
+    position: absolute;
+    right: 15px;
+    width: 100px;
+    height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main_portfolio .tab_arrows .right::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+    background: #333;
+
+
+}
+
+.main_portfolio .tab_arrows .right::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 20px;
+
+    height: 2px;
+    background: #333;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+
+
+
+}
+
+
+
+
+.main_portfolio .itm.on {
+    display: flex;
+}
+
+.main_portfolio .tab_txt {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+
+
+
+
+    margin: 0 0 0 -500px;
+    background: #fff;
+    border: 1px solid #ddd;
+
+    width: 350px;
+    height: 420px;
+    padding: 40px 30px;
+
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main_portfolio .tab_txt::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #369;
+    transform: translate(-50%, 0);
+
+}
+
+.main_portfolio .slick-dots {
+    margin: 40px 0;
+    text-align: center;
+
+
+}
+
+.main_portfolio .slick-dots li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #369;
+    margin: 0 10px;
+
+}
+
+.main_portfolio .slick-dots li.slick-active {
+    background: #333;
+}
+
+.main_portfolio .slick-dots button {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: #444;
+    color: #fff;
+}
+
+.footer .ft {
+    border-bottom: 1px solid #555;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+
+.footer .content ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer .content li strong {
+    font-weight: 700;
+}
+
+.footer .content .customer li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: #555;
+    margin: 0 20px;
+}
+
+
+
+/* .footer .content li~li:not(:last-child) {
+    content: "/";
+} */
+.footer .sns {
+    gap: 4px;
+
+}
+
+.footer .sns i {
+    padding: 5px;
+    font-size: 20px;
+    background: #333;
+
+
+}
+
+.footer address {
+    font-style: normal;
+}
+
+.footer .link {
+    gap: 20px
+}
+
+#fl {
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: #369;
+    color: #fff;
+}
+
+.family_link2 {
+    position: relative;
+}
+
+.family_link2 span {
+    display: block;
+    width: 150px;
+    line-height: 29px;
+    padding: 0 15px;
+
+    border: 1px solid #ddd;
+    background: #333;
+    color: #fff;
+
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.family_link2 span i {
+    float: right;
+    line-height: 29px;
+}
+
+.family_link2 span.on i {
+    transform: rotate(180deg);
+}
+
+.family_link2 .fl2 ul {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+
+    border: 1px solid #ddd;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.family_link2 .fl2 ul.on {
+    display: flex;
+}
+
+.family_link2 .fl2 ul a {
+    display: block;
+    line-height: 30px;
+    padding: 0 15px;
+}
+
+.family_link2 .fl2 ul li~li {
+    border-top: 1px solid #ddd;
+}
+
+/* .family_link2 span i {
+    float: right;
+    line-height: 29px;
+}
+
+.family_link2 span.on i {
+    transform: rotate(180deg);
+}
+
+.family_link2 .fl2 ul {
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+
+    border: 1px solid #ddd;
+
+    padding: 5px 10px;
+    background: #369;
+    color: #fff;
+    width: 100%;
+
+    line-height: 29px;
+    flex-direction: column;
+    align-items: stretch;
+
+    display: none;
+
+
+}
+
+.family_link2 .fl2 ul.on {
+    display: flex;
+}
+
+.family_link2 .fl2 ul a {
+    display: flex;
+    padding: 0 15px;
+}
+
+.family_link2 ul li~li {
+    border-top: 1px solid #ddd;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .to_top {
     position: fixed;
     bottom: 100px;
     right: 100px;
     z-index: 999;
+
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+}
+
+.to_top.on {
+    bottom: 50px;
+    visibility: visible;
+    opacity: 1;
 }
 
 .to_top i {
     color: #fff;
-    background: tomato;
+    background: skyblue;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
